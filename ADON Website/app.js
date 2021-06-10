@@ -1,3 +1,11 @@
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', ready);
+} else {
+  ready();
+}
+
+
+function ready(){
 
 const nav = document.querySelector('.menu');
 window.onscroll = function () {
@@ -20,3 +28,52 @@ $(document).ready(function() {
    
     });
   });
+
+
+
+
+// Sliders
+
+$(".client-carousel").owlCarousel({
+  stagePadding: 20,   //gives padding
+  center: true,
+  autoplay:true,
+  autoplayTimeout:3000,
+  autoplayHoverPause:true,
+  margin:10,
+  loop:true,
+  responsiveClass:true,
+  responsive:{
+    0:{
+      items:1
+    },
+    680:{
+      items:2
+    },
+    960:{
+      margin:50,
+      items:2,
+      stagePadding:100,
+      autoplay:false
+    }
+  }
+});
+
+$(".team-slider").owlCarousel({
+responsiveClass:true,
+  responsive:{
+    0:{
+      items:1,
+      autoplay:true,
+      loop:true
+    },
+    680:{
+      items:2
+    },
+    960:{
+      items:3
+    
+    }
+  }
+});
+}
