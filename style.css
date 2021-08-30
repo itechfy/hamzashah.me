@@ -44,7 +44,7 @@ main{
 .image-area{
     width:max-content;
     overflow: hidden;
-    transform:translateX(-200px);
+    transform:translate(-150px,150px);
 }
 .image-area img{
     width: 100%;
