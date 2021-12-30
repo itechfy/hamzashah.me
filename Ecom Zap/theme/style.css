@@ -286,6 +286,9 @@ nav,
 .left-hero {
   padding-top: 5%;
 }
+.circles{
+  overflow: hidden;
+}
 .left-hero {
   padding-bottom: 6%;
 }
@@ -542,13 +545,14 @@ textarea,
     display: flex;
   }
   .menu-list {
-    position: absolute;
+    position: fixed;
     background-color: var(--dark-blue);
     flex-direction: column;
     width: 100vw;
     height: 100vh;
     top: 0;
-    right: -100vw;
+    right: 0;
+    display: none;
     align-items: center;
     justify-content: center;
     z-index: 7;
@@ -557,7 +561,7 @@ textarea,
     flex: 1;
   }
   #chkbox:checked + .menu-list {
-    right: 0;
+    display: flex;
   }
   .line {
     background-color: #fff;
