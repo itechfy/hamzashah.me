@@ -43,10 +43,8 @@
   --sky: #4d76ff;
   --focus1: #100058;
 }
-body,
-html {
+body {
   background-color: var(--sky);
-  overflow-x: hidden;
 }
 a {
   text-decoration: none;
@@ -544,7 +542,7 @@ textarea,
     display: flex;
   }
   .menu-list {
-    position: fixed;
+    position: absolute;
     background-color: var(--dark-blue);
     flex-direction: column;
     width: 100vw;
